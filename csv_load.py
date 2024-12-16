@@ -15,7 +15,7 @@ with open('/Users/aferg/garden/finance_loader/configuration.json', 'r') as file:
 theFolder = input("The process starts with the folder that corresponds with the source of finances (ie 'chase', 'bOfA'): ")
 print(theFolder)
 
-theFile = input("Delete the six rows at the beginning and that one beginning balance row, saved it to the level1 folder, then enter the yyyy_mm it is: ")
+theFile = input("Delete the six rows at the beginning and that one beginning balance row, saved it to the level1 folder, then enter the yyyy_mm: ")
 
 df = pd.read_csv(f'/Users/aferg/data/finance/statement_downloads/level1/{theFolder}/{theFile}.csv')
 
